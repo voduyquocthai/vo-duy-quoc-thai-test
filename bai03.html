@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Bai 3 -->
+    <script>
+        let a = prompt('Nhập vào số cần test')
+        function isFibonacci(x) {
+          let fib = [0,1]
+          if (x == 0 || x == 1) {
+                return true;
+          }
+          while (fib[fib.length - 1] < x) {
+                fib.push(fib[fib.length-1] + fib[fib.length-2]);
+          }
+          if (fib[fib.length - 1] == x) {
+                return true;
+          }
+          return false;
+    }
+    alert(isFibonacci(a));
+    
+        </script>
+</body>
+</html>
