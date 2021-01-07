@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let num = +prompt('nhập số');
+    function isFibonacci(num){
+    for ( let i=0,j=1,x=0;x<=num;) {
+        x = i + j;
+        i = j;
+        j = x;
+        if (num == x) {
+            return true;
+        }
+    }
+    return false
+    }
+    alert(isFibonacci(num));
+    </script>
+</body>
+</html>
